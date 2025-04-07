@@ -1,0 +1,22 @@
+{
+  "name": "5to",
+  "version": "1.0.0",
+  "description": "iniciando npm",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GustavoDasm/QuintoLunes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GustavoDasm/QuintoLunes/issues"
+  },
+  "homepage": "https://github.com/GustavoDasm/QuintoLunes#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
