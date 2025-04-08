@@ -4,7 +4,8 @@
   "description": "iniciando npm",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "ej1": "nodemon ejercicios1.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "homepage": "https://github.com/GustavoDasm/QuintoLunes#readme",
   "devDependencies": {
     "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
   }
 }
