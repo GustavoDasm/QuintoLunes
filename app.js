@@ -1,32 +1,33 @@
-/* console.log("aaaaaaaaaaaaaaaaaaaa")
-const showMessage = (message) =>{
-    return message
-}
-console.log(showMessage('Hola como estas?')) */
+const express = require('express')
+const morgan = require('morgan')
+const path = require('path')
 
-/* var a = 2
-if(a % 2 == 0){
-    console.log("Es un numero Par")
-}else{
-    console.log("Es un numero Impar")
-} */
+const app = express()
 
-/* var array = Array(1,2,3,4,5,6,7,8,9)
+const useRouter = require('./routers/userRouters')
+const userLogin = require('./middlewares/userLogin')
 
-for(array1 of array){
-    console.log(array1)
-} */
+app.get('/', (req, res) => {  
+    const data = {
+        "title":"Titulo de la pagina",
+        "message":"Bienvenido a mi sitio web",
+        "showMessage":true,
+        "items":[1, 2, 3, 4, 5]
+    }  
+    res.render('index', data)
+})
 
-function busquedaLineal(arr, elemento){
-    for (let i = 0; i < arr.length; i++) {
-        if(arr[i] === elemento){
-            return i
-        }
-    }
-    return -1
-}
+app.use(express.json())
+app.use('/users', useRouter)
 
-const array1 = [4,6,8,2,1,9,5,3,12]
-const elementoBuscado = 4
-const indice = busquedaLineal(array1, elementoBuscado)
-console.log(`El elemento buscado ${elementoBuscado} se encuentra en el indice ${indice}`)
+app.use(userLogin)
+
+app.set('views', path.join(__dirname, 'views'))
+app.set('view engine', 'ejs')
+
+
+const port = 8080
+app.listen(port, () => {
+    console.log(`Aplicación con express ejecutandose en el puerto ${port}`)
+})
+
