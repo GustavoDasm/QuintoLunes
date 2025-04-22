@@ -6,6 +6,9 @@ const app = express()
 
 const useRouter = require('./routers/userRouters')
 const userLogin = require('./middlewares/userLogin')
+const connectToDatabase = require('./database/connection')
+
+
 
 app.get('/', (req, res) => {  
     const data = {
