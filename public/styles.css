@@ -1,17 +1,23 @@
-#username{
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.username{
     width: 50%;
     padding: 10px;
     border: 0px;
 }
 
-#chat{
+.chat{
     margin: 0 auto;
     width: 400px;
     border: 1px solid;
     border-radius: 4px;
 }
 
-#writeMessage{
+.writeMessage{
     width: 85%;
     margin: 10px;
     padding: 15px;
@@ -19,13 +25,22 @@
     margin-right: auto;
 }
 
-#messages{
+.messages{
     height: 300px;
     overflow: auto;
     padding: 15px;
 }
 
-#message{
-    margin: 15;
+.message{
+    background-color: #8ea6b2;
+    color: white;
+    border-radius: 5px;
+    margin: 10px 0 0 10px;
+    padding: 5px;
+    display: inline-block;
 }
 
+.title{
+    text-align: center;
+    color: #47646f;
+}
