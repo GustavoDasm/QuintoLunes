@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <div id="chat">
-            <input type="text" id="username" placeholder="Ingrese su nombre de usuario">
-            <div id="messages">
-                <div class="message">Gustavo:Hello</div>
-                <div class="message">Gustavo:Hola</div>
-            </div>
-            <div id="writing"></div>
-            <textarea id="writeMessage" placeholder="Ingrese su mensaje"></textarea>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div id="chat">
+        <input type="text" id="username" placeholder="Ingrese su nombre de usuario">
+        <div id="messages">
+            <div class="message">Gustavo:Hello</div>
+            <div class="message">Gustavo:Hola</div>
         </div>
-        
-        
-        <script src="/socket.io/socket.io.js"></script>
-        <script>
-            const socket = io()
-            </script>
+        <div id="writing"></div>
+        <textarea id="writeMessage" placeholder="Ingrese su mensaje"></textarea>
+    </div>
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io()
+    </script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
 </body>
+
 </html>
