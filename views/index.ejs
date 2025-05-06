@@ -31,7 +31,7 @@
             for(const message of m){
                 content += `
                 <div class="message">
-                    ${message.username}:${message.message}
+                    ${message.username}: ${message.message}
                 </div>
                 <br>    
                 `
@@ -45,7 +45,7 @@
         })
 
         socket.on('writing', (username) => {
-            writing.innerHTML = username + "Esta escribiendo"
+            writing.innerHTML = username + " esta escribiendo..."
             setTimeout(() => {
                 writing.innerHTML = ''
             }, 3000)
