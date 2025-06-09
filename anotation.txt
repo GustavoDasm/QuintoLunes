@@ -1,0 +1,5 @@
+regresionLineal
+tensor flow
+redes neuronales
+llama
+chatbot
