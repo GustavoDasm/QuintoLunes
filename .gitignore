@@ -9,3 +9,5 @@ node_modules/
 # Ignora configuraciones de IDEs
 .vscode/
 .idea/
+
+.config.js
