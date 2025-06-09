@@ -1,4 +1,4 @@
-
+.env
 # Ignora módulos de Node.js
 node_modules/
 
