@@ -1,0 +1,11 @@
+
+# Ignora módulos de Node.js
+node_modules/
+
+# Ignora logs y temporales
+*.log
+*.tmp
+
+# Ignora configuraciones de IDEs
+.vscode/
+.idea/
