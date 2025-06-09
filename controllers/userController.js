@@ -29,7 +29,7 @@ exports.createUser = async (req, res) => {
         await userService.create(data)
         res.status(201).send({ message: 'Usuario creado', data })
     } catch (error) {
-        res.status(500).json({ "error": error.message })
+        res.status(500).json({ "error": error.message })    
     }
 }
 
